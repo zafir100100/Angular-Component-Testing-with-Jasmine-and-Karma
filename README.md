@@ -2,6 +2,10 @@
 
 This repository contains unit tests for the `LoginComponent` in an Angular application. It ensures the login form behaves correctly, with validation rules and maximum length constraints.  
 
+## **Video**  
+
+https://github.com/user-attachments/assets/1e88049b-e069-43d0-b27f-3e84d25a5e64
+
 ## **Technologies Used**  
 - Angular (version 19)
 - Jasmine & Karma (for testing)  
