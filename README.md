@@ -39,8 +39,12 @@ git clone https://github.com/your-username/angular-login-testing.git
 cd angular-login-testing
 npm install
 ```
+## Screenshot (Application)
 
-## Screenshot (Report)
+![image](https://github.com/user-attachments/assets/46c0da3b-f972-423b-995c-bce69c0dda1a)
+
+## Screenshot (Test Report)
 
 ![image](https://github.com/user-attachments/assets/6545d43f-9ed6-46f3-b064-40582663f6f3)
+
 
