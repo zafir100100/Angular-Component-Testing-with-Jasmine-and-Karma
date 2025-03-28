@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common'; // for ngIf, ngFor, etc.
 import { Component } from '@angular/core'; // for Component decorator
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms'; // for reactive forms
 import Swal from 'sweetalert2'; // Import SweetAlert2
+import { AppConstants } from '../../app.constants';
 
 @Component({
   selector: 'app-login',
@@ -12,17 +13,10 @@ import Swal from 'sweetalert2'; // Import SweetAlert2
 export class LoginComponent {
   form: FormGroup;
 
-  constructor(private fb: FormBuilder) {
-    // Initialize form with username and password fields
+  constructor(private fb: FormBuilder, private constants: AppConstants) {
     this.form = this.fb.group({
-      username: new FormControl('', [
-        Validators.required, 
-        Validators.maxLength(50)  // Add maxLength validation for username
-      ]),
-      password: new FormControl('', [
-        Validators.required, 
-        Validators.maxLength(50)  // Add maxLength validation for password
-      ])
+      username: ['', [Validators.required, Validators.maxLength(this.constants.MAX_LENGTH.USERNAME)]],
+      password: ['', [Validators.required, Validators.maxLength(this.constants.MAX_LENGTH.PASSWORD)]]
     });
   }
 
