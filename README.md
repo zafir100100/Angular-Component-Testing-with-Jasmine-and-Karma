@@ -38,3 +38,9 @@ This repository contains unit tests for the `LoginComponent` in an Angular appli
 git clone https://github.com/your-username/angular-login-testing.git
 cd angular-login-testing
 npm install
+```
+
+## Screenshot (Report)
+
+![image](https://github.com/user-attachments/assets/6545d43f-9ed6-46f3-b064-40582663f6f3)
+
