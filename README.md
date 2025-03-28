@@ -1,59 +1,40 @@
-# TestGlx
+# Angular Login Testing  
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+This repository contains unit tests for the `LoginComponent` in an Angular application. It ensures the login form behaves correctly, with validation rules and maximum length constraints.  
 
-## Development server
+## **Technologies Used**  
+- Angular (version 19)
+- Jasmine & Karma (for testing)  
+- SweetAlert2 (for modal handling)  
 
-To start a local development server, run:
+## **Test Scenarios**  
 
+### ✅ **Component Initialization**  
+- Should create the `LoginComponent`.  
+
+### ✅ **Form Controls**  
+- Should create a form with `username` and `password` fields.  
+- Should make the `username` and `password` fields **required**.  
+- Should mark the form as **invalid** when fields are empty.  
+- Should mark the form as **valid** when required fields are filled.  
+
+### ✅ **Form Validation Rules**  
+- Should make the `username` invalid if it **exceeds max length**.  
+- Should make the `password` invalid if it **exceeds max length**.  
+- Should make the `username` valid if it's **within max length**.  
+- Should make the `password` valid if it's **within max length**.  
+
+### ✅ **Login Functionality**  
+- Should return **true** when login is successful.  
+- Should return **false** when login fails with incorrect credentials.  
+
+### ✅ **SweetAlert2 Modal Handling**  
+- Should **dismiss SweetAlert modal after each test** by simulating `Esc` key or calling `Swal.close()`.  
+
+## **Setup & Run Tests**  
+
+### 📌 **Installation**  
 ```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+git clone https://github.com/your-username/angular-login-testing.git
+cd angular-login-testing
+npm install
