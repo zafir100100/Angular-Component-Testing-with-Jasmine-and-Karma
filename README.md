@@ -1,4 +1,4 @@
-# E2E Angular Component Testing with Jasmine & Karma
+# Angular Component Testing with Jasmine & Karma
 
 This repository contains unit tests for the `LoginComponent` in an Angular application. It ensures the login form behaves correctly, with validation rules and maximum length constraints.  
 
